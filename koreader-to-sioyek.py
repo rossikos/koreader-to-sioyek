@@ -10,7 +10,7 @@ import ast
 LOCAL_DATABASE_FILE = ""
 SHARED_DATABASE_FILE = ""
 SIOYEK_PATH = ""
-KOREADER_PATH = ""
+KOREADER_DIRECTORY = ""
 
 
 def get_md5_hash(path):
@@ -75,8 +75,8 @@ def scan_dir(path):
 
 def main():
     if len(sys.argv) < 2:
-        if KOREADER_PATH:
-            hash_data = scan_dir(KOREADER_PATH)
+        if KOREADER_DIRECTORY:
+            hash_data = scan_dir(KOREADER_DIRECTORY)
     else:
         hash_data = scan_dir(sys.argv[1])
         
@@ -110,8 +110,6 @@ def main():
         }
 
         for hi in highlights:
-            h_page = hi['page']
-
             try:
                 if shared_db.execute("SELECT document_path FROM highlights WHERE document_path = ? AND desc = ?", (book_hash, hi['text'])).fetchone():
                     continue
