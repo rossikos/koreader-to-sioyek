@@ -2,7 +2,7 @@
 
 A python script to import highlights made in [KOReader](https://github.com/koreader/koreader) into the [Sioyek](https://github.com/ahrm/sioyek) PDF viewer.
 
-The script will maintain the color of the original highlights and only add new highlights.
+The script will maintain original highlight color and only add new highlights.
 
 ## Usage
 
