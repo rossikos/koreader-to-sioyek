@@ -8,6 +8,7 @@ The alpha script is compatible with Sioyek's latest alpha release and will impor
 
 ## Usage
 
-- set the path to Sioyek and its database files in the script
-- run with `koreader-to-sioyek.py <directory>` where directory contains the PDFs and their respective metadata.pdf.lua files
-- to run without arguments, set KOREADER_DIRECTORY to the directory in the script
+- Set the path to Sioyek and its database files in the script
+- Run with `koreader-to-sioyek.py <directory>` where directory contains the PDFs and their respective metadata.pdf.lua files
+- To run without arguments, set KOREADER_DIRECTORY to the directory in the script
+- The PDF must have been previously opened in Sioyek for the script to work
